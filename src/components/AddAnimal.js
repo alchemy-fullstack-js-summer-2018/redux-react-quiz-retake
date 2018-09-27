@@ -25,14 +25,14 @@ class AddAnimal extends Component {
   };
 
   render() { 
-    const { animal } = this.state;
+    const { name } = this.state;
     const { type } = this.state;
 
     return ( 
       <Fragment>
         <h2>Add Animal</h2>
         <form onSubmit={this.handleSubmit}>
-          <input type="text" name="animal" value={ animal } onChange={this.handleChangeAnimal}/>
+          <input type="text" name="name" value={ name } onChange={this.handleChangeAnimal}/>
           <input type="text" name="type" value={ type } onChange={this.handleChangeType}/>
           <button type="submit">Add</button>
         </form>

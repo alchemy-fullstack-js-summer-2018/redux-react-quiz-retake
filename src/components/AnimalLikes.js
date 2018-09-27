@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Animal from './Animal';
 import AddAnimal from './AddAnimal';
 import { addAnimal, loadAnimals, likeAnimal } from './actions';
@@ -50,9 +51,8 @@ class AnimalLikes extends Component {
   }
 }
  
-export default (
+export default connect(
   state => ({
-    
     animals: getAnimals(state)
   }),
   { loadAnimals, addAnimal, likeAnimal }
