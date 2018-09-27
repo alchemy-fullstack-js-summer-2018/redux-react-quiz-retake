@@ -1,4 +1,4 @@
-import { ANIMALS_LOAD, ANIMALS_ADD, ANIMALS_LIKE } from './reducers';
+import { ANIMALS_LOAD } from './reducers';
 import shortid from 'shortid';
 
 export const loadAnimals = () => ({ 
@@ -9,3 +9,5 @@ export const loadAnimals = () => ({
     { id: shortid.generate(), name: 'Felix', type: 'cat', likes: 2 },
   ] 
 });
+
+// , ANIMALS_ADD, ANIMALS_LIKE 
