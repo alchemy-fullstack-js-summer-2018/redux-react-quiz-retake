@@ -61,7 +61,7 @@ using a selector `getTopAnimal` (you'll need to write that) that finds the anima
     `Animal` component is also passed the `likeAnimal` prop as `onLike`.
     2. An `AddAnimal` component that is passed the `addAnimal` prop
 
-#### `Color`
+#### `Animal`
 
 * Receives props `animal` and `onLike`
 * Renders:
@@ -70,7 +70,7 @@ using a selector `getTopAnimal` (you'll need to write that) that finds the anima
     3. Button for "Add Like" that calls the
     `onLike` prop with the `id` of this animal
 
-#### `AddColor`
+#### `AddAnimal`
 
 * Receives prop `addAnimal`
 * Has it's own **local component state**:
