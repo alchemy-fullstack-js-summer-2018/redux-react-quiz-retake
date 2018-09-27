@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import logo from '../assets/logo.png';
-// import TopAnimal from './TopAnimal';
-// import AnimalLikes from './AnimalLikes';
+import TopAnimal from './TopAnimal';
+import AnimalLikes from './AnimalLikes';
 import './App.css';
 
 class App extends Component {
@@ -15,8 +15,8 @@ class App extends Component {
           <h1>React &amp; Redux Quiz</h1>
         </header>
         <main>
-          {/* <TopAnimal/> */}
-          {/* <AnimalLikes/> */}
+          <TopAnimal/>
+          <AnimalLikes/>
         </main>
       </Fragment>
     );
