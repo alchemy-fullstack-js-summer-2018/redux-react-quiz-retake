@@ -16,7 +16,10 @@ describe('animals reducers', () => {
   });
 
   it('loads animals', () => {
-    const payload = [{}, {}, {}];
+    const payload = [{ id: shortid.generate(), name: 'George', type: 'monkey', likes: 2 },
+      { id: shortid.generate(), name: 'Lassie', type: 'dog', likes: 1 },
+      { id: shortid.generate(), name: 'Felix', type: 'cat', likes: 2 },
+    ];
 
     const state = animals([], { 
       type: ANIMALS_LOAD,

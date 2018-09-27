@@ -10,9 +10,10 @@ class AnimalLikes extends Component {
   state = {  };
 
   static propTypes = {  
-    animals: PropTypes.array,
+    animals: PropTypes.func,
     loadAnimals: PropTypes.func,
     addAnimal: PropTypes.func,
+    getAnimals: PropTypes.array,
     likeAnimal: PropTypes.func
   };
 
@@ -20,7 +21,7 @@ class AnimalLikes extends Component {
     this.props.loadAnimals();
   }
 
-  handleSelectedColor = animal => {
+  handleLikeAnimal = animal => {
     this.props.likeAnimal(animal);
   };
 

@@ -17,7 +17,7 @@ class AddAnimal extends Component {
     event.preventDefault();
   
     this.props.addAnimal(this.state.animal);
-    this.setState({ animal: '' });
+    this.setState({ name: '', type: '' });
   };
 
   handleChange = ({ target }) => {
