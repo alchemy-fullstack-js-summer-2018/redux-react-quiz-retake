@@ -1,4 +1,4 @@
-import { ANIMALS_LOAD } from './reducers';
+import { ANIMALS_LOAD, ANIMALS_ADD, ANIMALS_LIKE } from './reducers';
 import shortid from 'shortid';
 
 export const loadAnimals = () => ({ 
@@ -10,4 +10,16 @@ export const loadAnimals = () => ({
   ] 
 });
 
-// , ANIMALS_ADD, ANIMALS_LIKE 
+export const addAnimal = () => ({
+  type: ANIMALS_ADD,
+  payload: [
+    { id: shortid.generate(), name: 'Bambi', type: 'deer', likes: 0 }
+  ]
+});
+
+export const likeAnimal = () => ({
+  type: ANIMALS_LIKE,
+  payload: [
+    { id: shortid.generate(), name: 'Bambi', type: 'deer', likes: 1 }
+  ]
+});
