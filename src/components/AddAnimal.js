@@ -32,7 +32,9 @@ class AddAnimal extends Component {
       <Fragment>
         <h2>Add Animal</h2>
         <form onSubmit={this.handleSubmit}>
+          <label> Name </label>
           <input type="text" name="name" value={ name } onChange={this.handleChangeAnimal}/>
+          <label> Type </label>
           <input type="text" name="type" value={ type } onChange={this.handleChangeType}/>
           <button type="submit">Add</button>
         </form>
