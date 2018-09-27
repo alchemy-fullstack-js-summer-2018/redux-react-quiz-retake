@@ -26,3 +26,14 @@ export function likeAnimal(state = 'bambi', { type, payload }) {
   }
 }
 
+// Don't know how to write function to get top Animal using sort method
+// export function topAnimal(state = animals, { type, payload }){
+//   switch(type) {
+//     case TOP_ANIMAL:
+//       return state.sort((animal1.likes, animal2.likes) ({ 
+//          animal1.likes.localeCompare(animal2.likes) })
+
+//       }
+//   }
+// }
+

@@ -1,10 +1,15 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {  getTopAnimal } from './reducers';
 
 class TopAnimal extends Component {
   state = {  };
+
+  static propTypes = {  
+    getTopAnimal: PropTypes.func
+  };  
+
   render() { 
     return ( 
       <section>
