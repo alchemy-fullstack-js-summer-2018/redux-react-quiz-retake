@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import logo from '../assets/logo.png';
 // import TopAnimal from './TopAnimal';
-// import AnimalLikes from './AnimalLikes';
+import AnimalLikes from './AnimalLikes';
 import './App.css';
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
         </header>
         <main>
           {/* <TopAnimal/> */}
-          {/* <AnimalLikes/> */}
+          <AnimalLikes/>
         </main>
       </Fragment>
     );

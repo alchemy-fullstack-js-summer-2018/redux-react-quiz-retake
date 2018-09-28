@@ -9,3 +9,17 @@ export const loadAnimals = () => ({
     { id: shortid.generate(), name: 'Felix', type: 'cat', likes: 2 },
   ] 
 });
+
+export const addAnimal = () => ({
+  type: ANIMALS_ADD,
+  payload: [
+    { id: shortid.generate(), name: 'Bambi', type: 'deer', likes: 0 }
+  ]
+});
+
+export const likeAnimal = () => ({
+  type: ANIMALS_LIKE,
+  payload: [
+    { id: shortid.generate(), name: 'Bambi', type: 'deer', likes: 1 }
+  ]
+});
